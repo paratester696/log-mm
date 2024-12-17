@@ -1,0 +1,212 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<!-- Mirrored from api.markaz.com/uaa-service/user/reset/pwd.html?appName=MARKAZ_DATA_HUB_PROD&redirectUrl=https://markaz-datahub.markaz.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 06:44:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Markaz Password Reset</title>
+    <meta name="description" content="Markaz Password Reset">
+    <meta name="author" content="NW">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body class="login-page display-flex-center">
+
+<div class="login-container display-flex-center" style="justify-content: start;">
+    <img src="../../../../nw-endowus.s3.ap-southeast-1.amazonaws.com/asset/logo.png" alt="markaz-logo"
+         style="width: 220px; height: auto; margin: 48px" />
+    <div class="input-container">
+        <form id="form" action="https://api.markaz.com/uaa-service/user/reset/pwd/request" method="post" style="display: flex; flex-direction: column;">
+            <div class="form-input">
+                <label class="label" for="username">EMAIL ADDRESS</label>
+                <input class="input" type="email" id="username" required name="username" placeholder="Please enter email address">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0px;">
+                <span id="error" style="color: red;"></span>
+                <input id="submitBtn" class="login-button g-recaptcha" type="submit" value="Reset my password"
+                        data-sitekey="6LchsFYjAAAAABnI2F4zAv5UbXet1dx2ulENEHvy"
+                        data-callback='onSubmit'
+                        data-action='submit'
+                >
+            </div>
+            <input type="hidden" name="appName" value="MARKAZ_DATA_HUB_PROD">
+            <input type="hidden" name="redirectUrl" value="https://markaz-datahub.markaz.com/">
+        </form>
+    </div>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8f34f2135fcc189e',t:'MTczNDQxNzg3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../cdn-cgi/challenge-platform/h/g/scripts/jsd/f9063374b04d/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+<!-- Mirrored from api.markaz.com/uaa-service/user/reset/pwd.html?appName=MARKAZ_DATA_HUB_PROD&redirectUrl=https://markaz-datahub.markaz.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 06:44:38 GMT -->
+</html>
+
+<style type="text/css">
+    body {
+        margin: 0;
+    }
+
+    h2, h3 {
+        color: #454545;
+    }
+
+    a {
+        color: #005695;
+        text-decoration: unset;
+        font-weight: 500;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .display-flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login-page {
+        background-color: #E0EBF3;
+        color: #999999;
+        height: 100vh;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .login-container {
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .input-container {
+        align-items: flex-start;
+        width: 100%;
+        padding: 12px 38px;
+        box-sizing: border-box;
+    }
+
+    .label {
+        margin-bottom: 8px;
+        font-size: 13px;
+    }
+
+    .input {
+        border: solid 1px #e2e3e4;
+        border-radius: 48px;
+        width: 100%;
+        padding: 10px;
+        color: #101010;
+        height: 48px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    input:focus {
+        border: 1px solid #89d0df;
+        outline: none;
+    }
+
+    .login-button {
+        align-self: flex-end;
+        background-color: #005695;
+        height: 48px;
+        width: fit-content;
+        border-radius: 24px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .login-button:disabled,
+    .login-button:focus,
+    .login-button:active {
+        opacity: 0.65;
+    }
+
+    .login-button:disabled:hover {
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
+
+    .login-button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .form-input {
+        padding: 8px 0px;
+    }
+    .form-input label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .login-container {
+            width: 500px;
+        }
+    }
+</style>
+
+<script src="../../../../www.google.com/recaptcha/api.js"></script>
+<script>
+    window.onload = (event) => {
+        var registerOnAutoComplete = (elementSelector) => {
+            return new Promise(function(resolve, reject) {
+                var element = document.querySelector(elementSelector);
+                var hasKeyInteraction = false;
+
+                element.addEventListener("input", (e) => {
+                    if(hasKeyInteraction === false) {
+                        resolve(e.target);
+                    }
+                });
+
+                element.addEventListener("keydown", (e) => {
+                    // If there is a keyboard interaction then we believe it is not autocomplete
+                    hasKeyInteraction = true;
+                });
+            });
+        };
+        var username = document.getElementById("username");
+        var submitBtn = document.getElementById("submitBtn");
+
+        const validateEmail = (email) => {
+            return String(email)
+                .toLowerCase()
+                .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                );
+        };
+        
+        submitBtn.disabled = true;
+        username.addEventListener('keyup', e => {
+            if (validateEmail(username.value) !== null) {
+                submitBtn.disabled = false;
+            }
+        });
+
+        registerOnAutoComplete("input[name=username]").then((element) => {
+            submitBtn.disabled = false;
+        });
+
+    }
+    function onSubmit(token) {
+        var forgotPwdForm = document.getElementById("form");
+
+        var captchaTokenInput = document.createElement('input');
+        captchaTokenInput.setAttribute('name', 'captchaToken');
+        captchaTokenInput.setAttribute('value', token);
+        captchaTokenInput.setAttribute('type', 'hidden')
+
+        forgotPwdForm.appendChild(captchaTokenInput);
+        forgotPwdForm.submit();
+    }
+</script>
